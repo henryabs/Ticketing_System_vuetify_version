@@ -9,4 +9,7 @@ class Status extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    public function ticket(){
+        return $this->belongsTo(Ticket::class);
+    }
 }

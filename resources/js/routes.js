@@ -9,6 +9,7 @@ import Logs from './pages/Logs';
 import Top_issues from './reports/Top_issues';
 import Agent_reports from './reports/Agent_reports';
 import Ticket_reports from './reports/Ticket_reports';
+import TicketItem from './pages/TicketItem';
 const routes = [
     {
         path: '*',
@@ -59,6 +60,11 @@ const routes = [
         path: '/ticket_reports',
         component: Ticket_reports,
         name: 'ticket_reports'
+    },
+    {
+        path: '/ticket/:id',
+        component: TicketItem,
+        name: 'ticket_item'
     },
 ];
 

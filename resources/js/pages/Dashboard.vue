@@ -3,7 +3,7 @@
         <v-container fluid>
             <counter></counter>
               <v-layout row v-for="(item, index) in items" :key="index" class="ma-0 pa-1">
-                    <router-link :to="{name: 'dashboard'}">
+                    <router-link :to="{name: 'ticket_item', params: {id: item.id}}">
                       <v-list>
                         <v-list-item>
                           <v-list-item-avatar>

@@ -76,7 +76,10 @@ class TicketController extends Controller
      */
     public function show($id)
     {
-        //
+        $ticket = Ticket::with('status')->where('id', $id)->first();
+        return $ticket = [
+            'data' => $ticket
+        ];
     }
 
     /**
